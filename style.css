@@ -1,0 +1,141 @@
+
+@font-face {
+  font-family: 'titoli';
+  src: url('font/timesbold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'corpo';
+  src: url('font/times.otf') format('opentype');
+}
+
+footer{
+font-family: corpo;
+  text-align: center;
+  border: 20px;
+}
+body, html {
+  margin: 0;
+  height: 100%;
+}
+canvas {
+  display: block;
+  z-index: -3;
+}
+
+  .container {
+    padding: 20px;
+  }
+
+  .buttons-container {
+    display: flex;
+  /* align-content:flex-start; */
+  justify-content: space-between;
+  }
+  
+  
+  .bottonisinistra, .bottonidestra {
+    z-index: 4;
+    margin-right: 30px;
+    font-size:  3.1vw;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'corpo';
+    
+  }
+
+  .bottonisinistra.greenStyle{
+
+    color: green;
+  }
+  .bottonidestra.greenStyle{
+
+    color: green;
+  }
+
+.bottonisinistra:hover, .bottonidestra:hover {
+  color: red; /* Set the font color to red on hover */
+}
+
+.classe1 {
+  width: 85%;
+  position: relative;
+  z-index: 1;
+  text-align: left; 
+  font-family: 'corpo';
+}
+
+.classe1.greenStyle {
+  color: green;
+}
+
+h1{
+    font-weight: normal;
+    margin-left: 40px;
+    font-size: 3.2vw;
+font-family: 'corpo'
+}
+
+h1.greenStyle{
+  background-color: green;
+      color: white;
+
+}
+
+p{
+    
+    line-height: 1;
+    font-size: 3vw;
+    font-family: 'corpo'
+}
+
+
+
+/* .hover-effect {
+    padding: 0.0001px; 
+}   
+.hover-effect:hover {
+    background-color: black;
+    color: white;
+    z-index: -1
+  } */
+
+  @media (max-width: 600px) {
+h1{
+  font-weight: normal;
+  margin-left: 0px;
+  font-size: 8vw;
+font-family: 'corpo'
+}
+
+
+
+    .classe1 {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      text-align: left; 
+      font-family: 'corpo';
+    }
+
+    .bottonisinistra, .bottonidestra {
+      z-index: 4;
+      margin-right: -5px;
+      font-size: 5vw;
+      background-color: white;
+      border: none;
+      cursor: pointer;
+      font-family: 'corpo';
+      
+    }
+  
+    p {
+      line-height: 1;
+    font-size: 8vw;
+    font-family: 'corpo'
+    }
+
+    
+  }
+  
